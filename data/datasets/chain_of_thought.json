@@ -1,0 +1,127 @@
+{
+  "dataset_name": "chain_of_thought",
+  "description": "Multi-step reasoning problems",
+  "num_examples": 8,
+  "examples": [
+    {
+      "id": "cot_math_000",
+      "question": "If John has 8 apples and eats 2, then buys 5 more, how many does he have?",
+      "expected_answer": "11",
+      "category": "math",
+      "metadata": {
+        "difficulty": "medium",
+        "steps": 3,
+        "reasoning_steps": [
+          "Start with 8",
+          "Eat 2: 8-2=6",
+          "Buy 5: 6+5=11"
+        ]
+      }
+    },
+    {
+      "id": "cot_math_001",
+      "question": "Sarah has 15 cookies. She gives half to her friend. How many does she have left?",
+      "expected_answer": "7 or 8",
+      "category": "math",
+      "metadata": {
+        "difficulty": "medium",
+        "steps": 3,
+        "reasoning_steps": [
+          "Start with 15",
+          "Half of 15 is 7.5",
+          "Round to 7 or 8"
+        ]
+      }
+    },
+    {
+      "id": "cot_math_002",
+      "question": "A store sells apples for $2 each. If you buy 4 apples, how much do you pay?",
+      "expected_answer": "8",
+      "category": "math",
+      "metadata": {
+        "difficulty": "medium",
+        "steps": 3,
+        "reasoning_steps": [
+          "$2 per apple",
+          "4 apples",
+          "2 \u00d7 4 = $8"
+        ]
+      }
+    },
+    {
+      "id": "cot_math_003",
+      "question": "Tom has 20 marbles. He loses 3, then wins 7 more. How many does he have?",
+      "expected_answer": "24",
+      "category": "math",
+      "metadata": {
+        "difficulty": "medium",
+        "steps": 3,
+        "reasoning_steps": [
+          "Start: 20",
+          "Lose 3: 20-3=17",
+          "Win 7: 17+7=24"
+        ]
+      }
+    },
+    {
+      "id": "cot_math_004",
+      "question": "A train travels 60 miles in 1 hour. How far does it travel in 3 hours?",
+      "expected_answer": "180",
+      "category": "math",
+      "metadata": {
+        "difficulty": "medium",
+        "steps": 3,
+        "reasoning_steps": [
+          "60 miles per hour",
+          "3 hours",
+          "60 \u00d7 3 = 180 miles"
+        ]
+      }
+    },
+    {
+      "id": "cot_logic_000",
+      "question": "If all cats are animals, and Fluffy is a cat, is Fluffy an animal?",
+      "expected_answer": "yes",
+      "category": "logic",
+      "metadata": {
+        "difficulty": "easy",
+        "steps": 3,
+        "reasoning_steps": [
+          "All cats are animals",
+          "Fluffy is a cat",
+          "Therefore, Fluffy is an animal"
+        ]
+      }
+    },
+    {
+      "id": "cot_logic_001",
+      "question": "It's raining and I have an umbrella. Will I get wet if I go outside with my umbrella?",
+      "expected_answer": "no or less likely",
+      "category": "logic",
+      "metadata": {
+        "difficulty": "easy",
+        "steps": 3,
+        "reasoning_steps": [
+          "It's raining",
+          "Umbrella protects from rain",
+          "Won't get wet (or less wet)"
+        ]
+      }
+    },
+    {
+      "id": "cot_logic_002",
+      "question": "If today is Monday, what day was it 2 days ago?",
+      "expected_answer": "Saturday",
+      "category": "logic",
+      "metadata": {
+        "difficulty": "easy",
+        "steps": 3,
+        "reasoning_steps": [
+          "Today is Monday",
+          "1 day ago was Sunday",
+          "2 days ago was Saturday"
+        ]
+      }
+    }
+  ]
+}

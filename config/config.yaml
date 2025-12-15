@@ -1,0 +1,36 @@
+llm:
+  default_provider: "ollama"
+
+  ollama:
+    model: "llama3.2"
+    base_url: "http://localhost:11434"
+    timeout: 120
+
+  claude:
+    model: "claude-3-sonnet-20240229"
+    api_key_env: "ANTHROPIC_API_KEY"
+
+  gemini:
+    model: "gemini-pro"
+    api_key_env: "GOOGLE_API_KEY"
+
+  openai:
+    model: "gpt-4"
+    api_key_env: "OPENAI_API_KEY"
+
+experiment:
+  batch_size: 5
+  max_retries: 3
+  retry_delay: 2
+
+evaluation:
+  embedding_model: "all-MiniLM-L6-v2"
+  similarity_metric: "cosine"
+
+output:
+  results_dir: "results"
+  save_format:
+    - "json"
+    - "csv"
+  visualization_format:
+    - "png"
