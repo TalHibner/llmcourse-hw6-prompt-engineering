@@ -1,0 +1,341 @@
+{
+  "experiment_id": "sentiment_baseline_20251215_234941",
+  "timestamp": "2025-12-15T23:49:41.194667",
+  "configuration": {
+    "provider": "ollama:llama3.2",
+    "technique": "baseline",
+    "dataset": "sentiment_analysis"
+  },
+  "results": [
+    {
+      "example_id": "sent_pos_000",
+      "question": "What is the sentiment of: 'I love this product'?",
+      "expected_answer": "positive",
+      "actual_answer": "ERROR: Ollama generation failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)",
+      "similarity_score": 0.0,
+      "execution_time_ms": 0
+    },
+    {
+      "example_id": "sent_pos_001",
+      "question": "What is the sentiment of: 'This is amazing'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"This is amazing\" is positive. It expresses strong admiration and enthusiasm, indicating a highly favorable or enthusiastic tone.",
+      "similarity_score": 0.41862350702285767,
+      "execution_time_ms": 37678
+    },
+    {
+      "example_id": "sent_pos_002",
+      "question": "What is the sentiment of: 'Excellent service'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Excellent service\" is positive. It conveys a high level of satisfaction and praise for the quality of service received. The word \"excellent\" itself has a strong positive connotation, indicating that the speaker holds the service in very high esteem.",
+      "similarity_score": 0.4084656834602356,
+      "execution_time_ms": 58733
+    },
+    {
+      "example_id": "sent_pos_003",
+      "question": "What is the sentiment of: 'Best experience ever'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Best experience ever\" is extremely positive. The word \"ever\" implies that it was a once-in-a-lifetime or exceptional experience, and the phrase as a whole conveys a sense of enthusiasm and satisfaction.",
+      "similarity_score": 0.2504304349422455,
+      "execution_time_ms": 58310
+    },
+    {
+      "example_id": "sent_pos_004",
+      "question": "What is the sentiment of: 'Wonderful quality'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Wonderful quality\" is positive. The word \"wonderful\" has a highly favorable connotation, indicating that the speaker holds high praise for the quality in question.",
+      "similarity_score": 0.4444972276687622,
+      "execution_time_ms": 45192
+    },
+    {
+      "example_id": "sent_pos_005",
+      "question": "What is the sentiment of: 'Highly recommend this'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Highly recommend this\" is extremely positive. The use of the word \"Highly\" emphasizes a strong endorsement, and the phrase as a whole conveys a sense of enthusiasm and confidence in the recommendation.",
+      "similarity_score": 0.24565811455249786,
+      "execution_time_ms": 51445
+    },
+    {
+      "example_id": "sent_pos_006",
+      "question": "What is the sentiment of: 'Fantastic results'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Fantastic results\" is POSITIVE. The word \"fantastic\" is an adjective that conveys a strong sense of enthusiasm, approval, and admiration, indicating a highly favorable attitude towards the results.",
+      "similarity_score": 0.37138089537620544,
+      "execution_time_ms": 47211
+    },
+    {
+      "example_id": "sent_pos_007",
+      "question": "What is the sentiment of: 'Absolutely brilliant'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Absolutely brilliant\" is overwhelmingly positive and enthusiastic. The word \"brilliant\" itself has a strong connotation of excellence, intelligence, or exceptional quality, and adding the adjective \"absolutely\" to it amplifies its positivity, implying that the quality is not just good, but truly remarkable or exceptional.",
+      "similarity_score": 0.25416886806488037,
+      "execution_time_ms": 63069
+    },
+    {
+      "example_id": "sent_pos_008",
+      "question": "What is the sentiment of: 'Very impressed with this'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Very impressed with this\" is extremely positive. The use of the word \"very\" emphasizes the strength of the speaker's emotions, and the phrase as a whole conveys a sense of admiration and approval.",
+      "similarity_score": 0.27457326650619507,
+      "execution_time_ms": 50051
+    },
+    {
+      "example_id": "sent_pos_009",
+      "question": "What is the sentiment of: 'Outstanding performance'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Outstanding performance\" is overwhelmingly positive. The word \"outstanding\" conveys a sense of excellence, exceptional quality, and high achievement, implying that something has exceeded expectations or standards. This phrase is often used to express admiration, approval, and appreciation for someone's work, effort, or accomplishment.",
+      "similarity_score": 0.33701762557029724,
+      "execution_time_ms": 62204
+    },
+    {
+      "example_id": "sent_pos_010",
+      "question": "What is the sentiment of: 'This exceeded my expectations'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of the statement \"This exceeded my expectations\" is positive. The word \"exceeded\" implies that something was better than what was expected, which suggests a sense of surprise and satisfaction. The overall tone is one of pleasant surprise and approval.",
+      "similarity_score": 0.36823248863220215,
+      "execution_time_ms": 53447
+    },
+    {
+      "example_id": "sent_pos_011",
+      "question": "What is the sentiment of: 'Truly exceptional'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Truly exceptional\" is positive. The word \"exceptional\" itself implies something that is above average or outstanding, and the addition of \"truly\" emphasizes that it's not just good, but truly exceptional, which reinforces a strong positive sentiment.",
+      "similarity_score": 0.3649502992630005,
+      "execution_time_ms": 55945
+    },
+    {
+      "example_id": "sent_pos_012",
+      "question": "What is the sentiment of: 'Love it so much'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Love it so much\" is extremely positive. The phrase conveys a strong and enthusiastic affection for something, indicating that the speaker has a deep admiration or adoration for it. The use of \"so much\" also emphasizes the intensity of their emotions, suggesting that they cannot contain their enthusiasm or appreciation.",
+      "similarity_score": 0.20368541777133942,
+      "execution_time_ms": 59793
+    },
+    {
+      "example_id": "sent_pos_013",
+      "question": "What is the sentiment of: 'Perfect in every way'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Perfect in every way\" is overwhelmingly positive. It conveys a sense of admiration, approval, and perfection, implying that something or someone is flawless, ideal, and without any defects or flaws. The phrase has a strong emotional tone, suggesting that the subject being described is exceptional, desirable, and perhaps even enviable.",
+      "similarity_score": 0.23113536834716797,
+      "execution_time_ms": 68917
+    },
+    {
+      "example_id": "sent_pos_014",
+      "question": "What is the sentiment of: 'Could not be happier'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Could not be happier\" is extremely positive. The word \"happier\" has a strong emotional connotation, implying extreme joy, satisfaction, and contentment. The phrase as a whole expresses a very high level of happiness and enthusiasm.",
+      "similarity_score": 0.3473326563835144,
+      "execution_time_ms": 53995
+    },
+    {
+      "example_id": "sent_neg_000",
+      "question": "What is the sentiment of: 'I hate this'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"I hate this\" is strongly negative. It expresses intense dislike, anger, or hostility towards something, and can be interpreted as a very strong emotional state.",
+      "similarity_score": 0.33852070569992065,
+      "execution_time_ms": 37297
+    },
+    {
+      "example_id": "sent_neg_001",
+      "question": "What is the sentiment of: 'This is terrible'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"This is terrible\" is negative. The word \"terrible\" has a strongly negative connotation, indicating that something is bad or unpleasant.",
+      "similarity_score": 0.3620130121707916,
+      "execution_time_ms": 40749
+    },
+    {
+      "example_id": "sent_neg_002",
+      "question": "What is the sentiment of: 'Awful experience'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Awful experience\" is negative. The word \"awful\" has a strong connotation of something being very bad or unpleasant, indicating that the speaker had a bad time or encountered a problem that was frustrating or disturbing.",
+      "similarity_score": 0.3019576668739319,
+      "execution_time_ms": 45694
+    },
+    {
+      "example_id": "sent_neg_003",
+      "question": "What is the sentiment of: 'Worst product ever'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Worst product ever\" is strongly negative. It expresses a strong dissatisfaction and disappointment with the product, implying that it was poorly made or did not meet expectations. The phrase has an intense emotional tone, suggesting that the speaker had a very poor experience with the product.",
+      "similarity_score": 0.3313791751861572,
+      "execution_time_ms": 55393
+    },
+    {
+      "example_id": "sent_neg_004",
+      "question": "What is the sentiment of: 'Very disappointed'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Very disappointed\" is negative. It expresses a strong feeling of dissatisfaction or unhappiness, indicating that something has not met expectations or has caused frustration.",
+      "similarity_score": 0.29098987579345703,
+      "execution_time_ms": 30932
+    },
+    {
+      "example_id": "sent_neg_005",
+      "question": "What is the sentiment of: 'Complete waste of money'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of the phrase \"Complete waste of money\" is strongly negative. It expresses strong disapproval and disappointment with a purchase or investment, implying that it was unnecessary, poorly made, or not worth the cost. The tone is critical and dismissive, suggesting that the person who made the purchase made a bad decision.",
+      "similarity_score": 0.23653945326805115,
+      "execution_time_ms": 65877
+    },
+    {
+      "example_id": "sent_neg_006",
+      "question": "What is the sentiment of: 'Do not recommend'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Do not recommend\" is negative. It implies a lack of endorsement or approval, and can be perceived as cautioning others against making something (e.g. a purchase, decision, etc.).",
+      "similarity_score": 0.28402137756347656,
+      "execution_time_ms": 41464
+    },
+    {
+      "example_id": "sent_neg_007",
+      "question": "What is the sentiment of: 'Horrible quality'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Horrible quality\" is negative. It expresses a strong sense of disapproval and dislike for something, indicating that the speaker finds it to be unacceptable or of very poor standard.",
+      "similarity_score": 0.26601362228393555,
+      "execution_time_ms": 42517
+    },
+    {
+      "example_id": "sent_neg_008",
+      "question": "What is the sentiment of: 'Extremely frustrating'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Extremely frustrating\" is overwhelmingly negative. It expresses a strong feeling of annoyance, disappointment, and irritation, indicating a highly unfavorable emotional state.",
+      "similarity_score": 0.31143566966056824,
+      "execution_time_ms": 34317
+    },
+    {
+      "example_id": "sent_neg_009",
+      "question": "What is the sentiment of: 'Total disaster'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Total disaster\" is strongly negative. It implies a complete and utter failure or catastrophe, with no hope for recovery or salvage. The use of the word \"total\" adds emphasis to the severity of the situation, suggesting that it's not just bad, but completely without redeeming qualities.",
+      "similarity_score": 0.2399207055568695,
+      "execution_time_ms": 61858
+    },
+    {
+      "example_id": "sent_neg_010",
+      "question": "What is the sentiment of: 'Really bad service'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Really bad service\" is negative. It implies that the service provided was of very poor quality, likely causing a negative experience for someone. The use of the word \"bad\" emphasizes the extent of the dissatisfaction.",
+      "similarity_score": 0.2772752046585083,
+      "execution_time_ms": 44170
+    },
+    {
+      "example_id": "sent_neg_011",
+      "question": "What is the sentiment of: 'Not worth it at all'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of the phrase \"Not worth it at all\" is strongly negative. It expresses a strong sense of dissatisfaction, frustration, or disappointment with something, implying that the cost, effort, or investment was not justified or exceeded one's expectations.",
+      "similarity_score": 0.2806147038936615,
+      "execution_time_ms": 52957
+    },
+    {
+      "example_id": "sent_neg_012",
+      "question": "What is the sentiment of: 'Deeply unsatisfied'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Deeply unsatisfied\" is negative. It expresses a strong feeling of dissatisfaction, frustration, or discontent with something. The use of the word \"deeply\" intensifies the emotional tone, implying that the feelings are profound and overwhelming.",
+      "similarity_score": 0.23662959039211273,
+      "execution_time_ms": 49204
+    },
+    {
+      "example_id": "sent_neg_013",
+      "question": "What is the sentiment of: 'This is broken'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"This is broken\" is negative. The word \"broken\" implies something is damaged, faulty, or no longer functional, which conveys a sense of disappointment, frustration, or discontent.\n\nIn this context, the speaker appears to be expressing dissatisfaction or disapproval with something that has malfunctioned or failed to meet their expectations.",
+      "similarity_score": 0.21286903321743011,
+      "execution_time_ms": 66256
+    },
+    {
+      "example_id": "sent_neg_014",
+      "question": "What is the sentiment of: 'Regret this purchase'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Regret this purchase\" is negative. It expresses a feeling of disappointment, dissatisfaction, or remorse about making a certain decision (in this case, buying something). The tone is also somewhat apologetic or regretful, implying that the speaker wishes they had made a different choice.",
+      "similarity_score": 0.2899242043495178,
+      "execution_time_ms": 58743
+    },
+    {
+      "example_id": "sent_neu_000",
+      "question": "What is the sentiment of: 'The product arrived'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of the statement \"The product arrived\" is neutral. It simply states a fact without expressing any emotion or opinion, which is why it falls under the category of neutral sentiment.",
+      "similarity_score": 0.43101072311401367,
+      "execution_time_ms": 36505
+    },
+    {
+      "example_id": "sent_neu_001",
+      "question": "What is the sentiment of: 'It is blue'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of the statement \"It is blue\" is neutral. It's a factual statement that provides information about the color of something, without any emotional tone or bias. The language used is straightforward and lacks any evaluative or emotive elements, which indicates a neutral sentiment.",
+      "similarity_score": 0.4008808732032776,
+      "execution_time_ms": 54336
+    },
+    {
+      "example_id": "sent_neu_002",
+      "question": "What is the sentiment of: 'This costs $10'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of the statement \"This costs $10\" can be neutral. It simply conveys information about the cost, without expressing any emotions or opinions.",
+      "similarity_score": 0.34372949600219727,
+      "execution_time_ms": 34698
+    },
+    {
+      "example_id": "sent_neu_003",
+      "question": "What is the sentiment of: 'The size is medium'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"The size is medium\" is neutral. It's a factual statement providing information about the size, without expressing any emotion or opinion.",
+      "similarity_score": 0.16062641143798828,
+      "execution_time_ms": 41955
+    },
+    {
+      "example_id": "sent_neu_004",
+      "question": "What is the sentiment of: 'It has three buttons'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"It has three buttons\" is neutral. The statement simply reports a fact about an object (in this case, something with buttons) without expressing any emotion or opinion. It does not convey a positive, negative, or subjective attitude, making it a neutral sentence.",
+      "similarity_score": 0.3875884413719177,
+      "execution_time_ms": 60243
+    },
+    {
+      "example_id": "sent_neu_005",
+      "question": "What is the sentiment of: 'Made in China'?",
+      "expected_answer": "neutral",
+      "actual_answer": "ERROR: Ollama generation failed: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)",
+      "similarity_score": 0.0,
+      "execution_time_ms": 0
+    },
+    {
+      "example_id": "sent_neu_006",
+      "question": "What is the sentiment of: 'Released in 2020'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"Released in 2020\" can be neutral or objective. The phrase simply states a fact about the year something was released, without expressing any emotion or opinion. It's a straightforward statement that provides information, and its tone is neither positive nor negative.",
+      "similarity_score": 0.25278928875923157,
+      "execution_time_ms": 74204
+    },
+    {
+      "example_id": "sent_neu_007",
+      "question": "What is the sentiment of: 'The box contains items'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"The box contains items\" is neutral. The sentence is a simple statement of fact, providing information about what is inside a box without expressing any emotion or opinion. It does not convey any positive or negative feelings.",
+      "similarity_score": 0.2654961943626404,
+      "execution_time_ms": 55499
+    },
+    {
+      "example_id": "sent_neu_008",
+      "question": "What is the sentiment of: 'Standard features included'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"Standard features included\" is neutral. It's a factual statement that doesn't convey any emotion or opinion, and its purpose is to inform about what's typically included in a standard package or product. The tone is objective and matter-of-fact, without any positive or negative connotation.",
+      "similarity_score": 0.27849096059799194,
+      "execution_time_ms": 73940
+    },
+    {
+      "example_id": "sent_neu_009",
+      "question": "What is the sentiment of: 'Shipped on Monday'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"Shipped on Monday\" can be considered as neutral. It's a factual statement that simply reports an event or action, without expressing any emotion or opinion. The tone is straightforward and informative, with no positive or negative connotation.",
+      "similarity_score": 0.3564181327819824,
+      "execution_time_ms": 59523
+    }
+  ],
+  "metrics": {
+    "mean_similarity": 0.2914321593940258,
+    "std_similarity": 0.09422430680982498,
+    "median_similarity": 0.2869727909564972,
+    "min_similarity": 0.0,
+    "max_similarity": 0.4444972276687622,
+    "total_examples": 40,
+    "successful": 38,
+    "failed": 2
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "experiment_id": "sentiment_standard_20251216_001112",
+  "timestamp": "2025-12-16T00:11:12.550632",
+  "configuration": {
+    "provider": "ollama:llama3.2",
+    "technique": "standard_improved",
+    "dataset": "sentiment_analysis"
+  },
+  "results": [
+    {
+      "example_id": "sent_pos_000",
+      "question": "What is the sentiment of: 'I love this product'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"I love this product\" is extremely positive, indicating strong affection and enthusiasm for the product.",
+      "similarity_score": 0.4195922911167145,
+      "execution_time_ms": 54091
+    },
+    {
+      "example_id": "sent_pos_001",
+      "question": "What is the sentiment of: 'This is amazing'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"This is amazing\" is overwhelmingly positive, conveying extreme admiration and excitement.",
+      "similarity_score": 0.35762453079223633,
+      "execution_time_ms": 31717
+    },
+    {
+      "example_id": "sent_pos_002",
+      "question": "What is the sentiment of: 'Excellent service'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Excellent service\" is positive, indicating high satisfaction with the quality of the service provided.",
+      "similarity_score": 0.4684518575668335,
+      "execution_time_ms": 28747
+    },
+    {
+      "example_id": "sent_pos_003",
+      "question": "What is the sentiment of: 'Best experience ever'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Best experience ever\" is extremely positive, conveying high enthusiasm and satisfaction.",
+      "similarity_score": 0.3095118999481201,
+      "execution_time_ms": 32022
+    },
+    {
+      "example_id": "sent_pos_004",
+      "question": "What is the sentiment of: 'Wonderful quality'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Wonderful quality\" is Positive. It conveys a sense of high praise and approval, indicating that the quality being referred to is excellent or exceptional.",
+      "similarity_score": 0.46255871653556824,
+      "execution_time_ms": 40572
+    },
+    {
+      "example_id": "sent_pos_005",
+      "question": "What is the sentiment of: 'Highly recommend this'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Highly recommend this\" is extremely positive, indicating strong endorsement or recommendation.",
+      "similarity_score": 0.28722602128982544,
+      "execution_time_ms": 26141
+    },
+    {
+      "example_id": "sent_pos_006",
+      "question": "What is the sentiment of: 'Fantastic results'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Fantastic results\" is Positive.",
+      "similarity_score": 0.46763166785240173,
+      "execution_time_ms": 14070
+    },
+    {
+      "example_id": "sent_pos_007",
+      "question": "What is the sentiment of: 'Absolutely brilliant'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Absolutely brilliant\" is extremely positive, indicating high praise and admiration for something or someone.",
+      "similarity_score": 0.3374704122543335,
+      "execution_time_ms": 29522
+    },
+    {
+      "example_id": "sent_pos_008",
+      "question": "What is the sentiment of: 'Very impressed with this'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Very impressed with this\" is POSITIVE.",
+      "similarity_score": 0.4415856897830963,
+      "execution_time_ms": 17223
+    },
+    {
+      "example_id": "sent_pos_009",
+      "question": "What is the sentiment of: 'Outstanding performance'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Outstanding performance\" is positive.",
+      "similarity_score": 0.49684634804725647,
+      "execution_time_ms": 18156
+    },
+    {
+      "example_id": "sent_pos_010",
+      "question": "What is the sentiment of: 'This exceeded my expectations'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"This exceeded my expectations\" is overwhelmingly positive, indicating surprise and satisfaction with a product, service, or experience.",
+      "similarity_score": 0.3545280694961548,
+      "execution_time_ms": 31879
+    },
+    {
+      "example_id": "sent_pos_011",
+      "question": "What is the sentiment of: 'Truly exceptional'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Truly exceptional\" is positive and highly approving. It conveys admiration and high praise for something or someone that exceeds expectations.",
+      "similarity_score": 0.3377305269241333,
+      "execution_time_ms": 33730
+    },
+    {
+      "example_id": "sent_pos_012",
+      "question": "What is the sentiment of: 'Love it so much'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Love it so much\" is extremely positive, indicating strong enthusiasm and affection for something.",
+      "similarity_score": 0.32179534435272217,
+      "execution_time_ms": 25833
+    },
+    {
+      "example_id": "sent_pos_013",
+      "question": "What is the sentiment of: 'Perfect in every way'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Perfect in every way\" is one of extreme admiration, approval, and satisfaction, conveying a high level of praise or enthusiasm.",
+      "similarity_score": 0.2061811089515686,
+      "execution_time_ms": 37375
+    },
+    {
+      "example_id": "sent_pos_014",
+      "question": "What is the sentiment of: 'Could not be happier'?",
+      "expected_answer": "positive",
+      "actual_answer": "The sentiment of \"Could not be happier\" is extremely positive, indicating great happiness and satisfaction.",
+      "similarity_score": 0.36941567063331604,
+      "execution_time_ms": 21179
+    },
+    {
+      "example_id": "sent_neg_000",
+      "question": "What is the sentiment of: 'I hate this'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"I hate this\" is strongly negative, expressing intense dislike or aversion towards something.",
+      "similarity_score": 0.3661416172981262,
+      "execution_time_ms": 30490
+    },
+    {
+      "example_id": "sent_neg_001",
+      "question": "What is the sentiment of: 'This is terrible'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"This is terrible\" is strongly negative, indicating strong disappointment or disapproval.",
+      "similarity_score": 0.35535216331481934,
+      "execution_time_ms": 21706
+    },
+    {
+      "example_id": "sent_neg_002",
+      "question": "What is the sentiment of: 'Awful experience'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Awful experience\" is negative, indicating strong dissatisfaction or displeasure.",
+      "similarity_score": 0.35379505157470703,
+      "execution_time_ms": 27062
+    },
+    {
+      "example_id": "sent_neg_003",
+      "question": "What is the sentiment of: 'Worst product ever'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Worst product ever\" is extremely negative, indicating strong dissatisfaction and dislike for the product.",
+      "similarity_score": 0.38665854930877686,
+      "execution_time_ms": 31732
+    },
+    {
+      "example_id": "sent_neg_004",
+      "question": "What is the sentiment of: 'Very disappointed'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Very disappointed\" is Negative.",
+      "similarity_score": 0.41840073466300964,
+      "execution_time_ms": 20177
+    },
+    {
+      "example_id": "sent_neg_005",
+      "question": "What is the sentiment of: 'Complete waste of money'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Complete waste of money\" is strongly negative, indicating strong disapproval or dissatisfaction with something that was spent.",
+      "similarity_score": 0.32533326745033264,
+      "execution_time_ms": 31104
+    },
+    {
+      "example_id": "sent_neg_006",
+      "question": "What is the sentiment of: 'Do not recommend'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Do not recommend\" is negative.",
+      "similarity_score": 0.3920946717262268,
+      "execution_time_ms": 20976
+    },
+    {
+      "example_id": "sent_neg_007",
+      "question": "What is the sentiment of: 'Horrible quality'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Horrible quality\" is Negative.",
+      "similarity_score": 0.35585442185401917,
+      "execution_time_ms": 19994
+    },
+    {
+      "example_id": "sent_neg_008",
+      "question": "What is the sentiment of: 'Extremely frustrating'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Extremely frustrating\" is strongly negative, indicating intense disappointment, annoyance, or irritation.",
+      "similarity_score": 0.3405163288116455,
+      "execution_time_ms": 29645
+    },
+    {
+      "example_id": "sent_neg_009",
+      "question": "What is the sentiment of: 'Total disaster'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Total disaster\" is extremely negative, indicating a complete failure or catastrophe.",
+      "similarity_score": 0.32912778854370117,
+      "execution_time_ms": 25259
+    },
+    {
+      "example_id": "sent_neg_010",
+      "question": "What is the sentiment of: 'Really bad service'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Really bad service\" is negative.",
+      "similarity_score": 0.377625048160553,
+      "execution_time_ms": 14496
+    },
+    {
+      "example_id": "sent_neg_011",
+      "question": "What is the sentiment of: 'Not worth it at all'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Not worth it at all\" is strongly negative, indicating strong dissatisfaction or disgust with something.",
+      "similarity_score": 0.3536291718482971,
+      "execution_time_ms": 32954
+    },
+    {
+      "example_id": "sent_neg_012",
+      "question": "What is the sentiment of: 'Deeply unsatisfied'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Deeply unsatisfied\" is Negative.",
+      "similarity_score": 0.3849107623100281,
+      "execution_time_ms": 16359
+    },
+    {
+      "example_id": "sent_neg_013",
+      "question": "What is the sentiment of: 'This is broken'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"This is broken\" is negative, specifically indicating dissatisfaction or frustration with something that has failed or malfunctioned.",
+      "similarity_score": 0.28385645151138306,
+      "execution_time_ms": 32503
+    },
+    {
+      "example_id": "sent_neg_014",
+      "question": "What is the sentiment of: 'Regret this purchase'?",
+      "expected_answer": "negative",
+      "actual_answer": "The sentiment of \"Regret this purchase\" is one of disappointment or dissatisfaction, indicating that the person who made the statement feels unhappy or sorry about their purchase decision. The overall tone is negative.",
+      "similarity_score": 0.3259434700012207,
+      "execution_time_ms": 42311
+    },
+    {
+      "example_id": "sent_neu_000",
+      "question": "What is the sentiment of: 'The product arrived'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"The product arrived\" is neutral, as it simply reports on a fact without expressing any emotion or opinion.",
+      "similarity_score": 0.4339303970336914,
+      "execution_time_ms": 31720
+    },
+    {
+      "example_id": "sent_neu_001",
+      "question": "What is the sentiment of: 'It is blue'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"It is blue\" is neutral. The statement simply reports on a fact, without expressing any emotion or opinion.",
+      "similarity_score": 0.39800480008125305,
+      "execution_time_ms": 37489
+    },
+    {
+      "example_id": "sent_neu_002",
+      "question": "What is the sentiment of: 'This costs $10'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"This costs $10\" is Neutral, as it is simply stating a fact without expressing any emotion or opinion.",
+      "similarity_score": 0.34912723302841187,
+      "execution_time_ms": 32884
+    },
+    {
+      "example_id": "sent_neu_003",
+      "question": "What is the sentiment of: 'The size is medium'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"The size is medium\" is neutral. It's a factual statement providing information about the size without expressing any emotion or opinion.",
+      "similarity_score": 0.17287684977054596,
+      "execution_time_ms": 37652
+    },
+    {
+      "example_id": "sent_neu_004",
+      "question": "What is the sentiment of: 'It has three buttons'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"It has three buttons\" is neutral. It's a factual statement providing information about an object, without any emotional tone or bias.",
+      "similarity_score": 0.35803326964378357,
+      "execution_time_ms": 43494
+    },
+    {
+      "example_id": "sent_neu_005",
+      "question": "What is the sentiment of: 'Made in China'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"Made in China\" can be neutral or positive, depending on the context. However, if I had to analyze it objectively, I would say that the sentiment is generally negative or connotative towards Chinese products.\n\nThis label often carries associations with lower quality, cheaper materials, and potential environmental or labor issues, which may affect consumer perception of the product's value, reliability, or safety.",
+      "similarity_score": 0.18862205743789673,
+      "execution_time_ms": 84232
+    },
+    {
+      "example_id": "sent_neu_006",
+      "question": "What is the sentiment of: 'Released in 2020'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"Released in 2020\" is neutral, as it is a factual statement providing information about a release date without any emotional connotation or opinion.",
+      "similarity_score": 0.27817052602767944,
+      "execution_time_ms": 49138
+    },
+    {
+      "example_id": "sent_neu_007",
+      "question": "What is the sentiment of: 'The box contains items'?",
+      "expected_answer": "neutral",
+      "actual_answer": "Neutral. The statement provides factual information without expressing a positive or negative emotion.",
+      "similarity_score": 0.6596792936325073,
+      "execution_time_ms": 28266
+    },
+    {
+      "example_id": "sent_neu_008",
+      "question": "What is the sentiment of: 'Standard features included'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"Standard features included\" is neutral, as it's a factual statement providing information without expressing a positive or negative emotion. It conveys a sense of inclusiveness and normalcy rather than enthusiasm or criticism.",
+      "similarity_score": 0.309614360332489,
+      "execution_time_ms": 56167
+    },
+    {
+      "example_id": "sent_neu_009",
+      "question": "What is the sentiment of: 'Shipped on Monday'?",
+      "expected_answer": "neutral",
+      "actual_answer": "The sentiment of \"Shipped on Monday\" is neutral/informative, as it provides factual information about shipping logistics. There is no emotional tone or opinion expressed in this phrase.",
+      "similarity_score": 0.20666256546974182,
+      "execution_time_ms": 49376
+    }
+  ],
+  "metrics": {
+    "mean_similarity": 0.3585527751594782,
+    "std_similarity": 0.087537246879399,
+    "median_similarity": 0.35494011640548706,
+    "min_similarity": 0.17287684977054596,
+    "max_similarity": 0.6596792936325073,
+    "total_examples": 40,
+    "successful": 40,
+    "failed": 0
+  }
+}

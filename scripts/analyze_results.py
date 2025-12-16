@@ -9,7 +9,7 @@ from collections import defaultdict
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.analysis import StatisticalAnalyzer, VisualizationGenerator
+from src.analysis import StatisticalAnalyzer, VisualizationGenerator, ResultsUpdater
 from src.utils.logging_config import setup_logging
 import logging
 
@@ -101,6 +101,24 @@ def main():
     viz_dir = Path("results/visualizations")
     for viz_file in sorted(viz_dir.glob("*.png")):
         logger.info(f"  - {viz_file.name}")
+
+    # Update RESULTS.md with actual findings
+    logger.info("\n" + "=" * 80)
+    logger.info("UPDATING RESULTS.md")
+    logger.info("=" * 80)
+
+    updater = ResultsUpdater()
+    success = updater.update_results_file()
+
+    if success:
+        logger.info("\n✓ RESULTS.md has been automatically updated with experimental findings!")
+        logger.info("  Review RESULTS.md to see the complete analysis.")
+    else:
+        logger.error("\n✗ Failed to update RESULTS.md")
+
+    logger.info("\n" + "=" * 80)
+    logger.info("ALL TASKS COMPLETE!")
+    logger.info("=" * 80)
 
 
 if __name__ == "__main__":

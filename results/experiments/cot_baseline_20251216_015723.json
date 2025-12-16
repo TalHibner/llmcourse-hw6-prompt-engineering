@@ -1,0 +1,85 @@
+{
+  "experiment_id": "cot_baseline_20251216_015723",
+  "timestamp": "2025-12-16T01:57:23.675546",
+  "configuration": {
+    "provider": "ollama:llama3.2",
+    "technique": "baseline",
+    "dataset": "chain_of_thought"
+  },
+  "results": [
+    {
+      "example_id": "cot_math_000",
+      "question": "If John has 8 apples and eats 2, then buys 5 more, how many does he have?",
+      "expected_answer": "11",
+      "actual_answer": "To solve this problem, let's break it down step by step:\n\n1. John starts with 8 apples.\n2. He eats 2 apples, leaving him with:\n   8 - 2 = 6\n3. Then, he buys 5 more apples, so now he has:\n   6 + 5 = 11\n\nTherefore, John has 11 apples in total.",
+      "similarity_score": 0.3561456799507141,
+      "execution_time_ms": 87510
+    },
+    {
+      "example_id": "cot_math_001",
+      "question": "Sarah has 15 cookies. She gives half to her friend. How many does she have left?",
+      "expected_answer": "7 or 8",
+      "actual_answer": "To find out how many cookies Sarah has left, we need to divide the total number of cookies by 2.\n\nSarah had 15 cookies initially.\nShe gave half of them away (half means dividing by 2).\n\n15 \u00f7 2 = 7.5\n\nSince you can't have a fraction of a cookie, we round down to the nearest whole number:\n\n7.5 \u2248 7\n\nSo, Sarah has 7 cookies left.",
+      "similarity_score": 0.2978437840938568,
+      "execution_time_ms": 96369
+    },
+    {
+      "example_id": "cot_math_002",
+      "question": "A store sells apples for $2 each. If you buy 4 apples, how much do you pay?",
+      "expected_answer": "8",
+      "actual_answer": "To find the total cost of buying 4 apples, multiply the price of one apple ($2) by 4:\n\n$2 x 4 = $8\n\nSo, if you buy 4 apples from the store, you will pay $8.",
+      "similarity_score": 0.20118381083011627,
+      "execution_time_ms": 62597
+    },
+    {
+      "example_id": "cot_math_003",
+      "question": "Tom has 20 marbles. He loses 3, then wins 7 more. How many does he have?",
+      "expected_answer": "24",
+      "actual_answer": "To find the number of marbles Tom has, we need to add and subtract the marbles he gained or lost.\n\nInitially, Tom had 20 marbles.\nHe lost 3 marbles, so we subtract 3: 20 - 3 = 17\nThen, he won 7 more marbles, so we add 7: 17 + 7 = 24\n\nTom now has 24 marbles.",
+      "similarity_score": 0.3959491550922394,
+      "execution_time_ms": 99288
+    },
+    {
+      "example_id": "cot_math_004",
+      "question": "A train travels 60 miles in 1 hour. How far does it travel in 3 hours?",
+      "expected_answer": "180",
+      "actual_answer": "To find the distance traveled by the train, we need to multiply the speed (miles per hour) by the time.\n\nSpeed = Distance / Time\nDistance = Speed x Time\n\nGiven that the train travels 60 miles in 1 hour, its speed is:\n\nSpeed = 60 miles / 1 hour = 60 miles/hour\n\nNow, let's find the distance traveled in 3 hours:\n\nDistance = Speed x Time\n= 60 miles/hour x 3 hours\n= 180 miles\n\nSo, the train travels 180 miles in 3 hours.",
+      "similarity_score": 0.12818488478660583,
+      "execution_time_ms": 117134
+    },
+    {
+      "example_id": "cot_logic_000",
+      "question": "If all cats are animals, and Fluffy is a cat, is Fluffy an animal?",
+      "expected_answer": "yes",
+      "actual_answer": "If all cats are animals, then Fluffy, being a cat, must also be an animal.\n\nIn other words, the statement \"all cats are animals\" implies that every individual cat belongs to the category of animals. Therefore, we can conclude that Fluffy is indeed an animal.",
+      "similarity_score": 0.06133496016263962,
+      "execution_time_ms": 67228
+    },
+    {
+      "example_id": "cot_logic_001",
+      "question": "It's raining and I have an umbrella. Will I get wet if I go outside with my umbrella?",
+      "expected_answer": "no or less likely",
+      "actual_answer": "No, you will not get wet if you go outside with your umbrella while it's raining. The purpose of an umbrella is to keep you dry by providing a barrier between the raindrops and your body. As long as the umbrella is open and pointing downwards, it should protect you from getting wet.",
+      "similarity_score": 0.06746888160705566,
+      "execution_time_ms": 71766
+    },
+    {
+      "example_id": "cot_logic_002",
+      "question": "If today is Monday, what day was it 2 days ago?",
+      "expected_answer": "Saturday",
+      "actual_answer": "If today is Monday, then 2 days ago would be Sunday.",
+      "similarity_score": 0.4943806827068329,
+      "execution_time_ms": 21662
+    }
+  ],
+  "metrics": {
+    "mean_similarity": 0.25031147990375757,
+    "std_similarity": 0.15029649027060893,
+    "median_similarity": 0.24951379746198654,
+    "min_similarity": 0.06133496016263962,
+    "max_similarity": 0.4943806827068329,
+    "total_examples": 8,
+    "successful": 8,
+    "failed": 0
+  }
+}

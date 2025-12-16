@@ -1,0 +1,85 @@
+{
+  "experiment_id": "cot_standard_20251216_020818",
+  "timestamp": "2025-12-16T02:08:18.141474",
+  "configuration": {
+    "provider": "ollama:llama3.2",
+    "technique": "standard_improved",
+    "dataset": "chain_of_thought"
+  },
+  "results": [
+    {
+      "example_id": "cot_math_000",
+      "question": "If John has 8 apples and eats 2, then buys 5 more, how many does he have?",
+      "expected_answer": "11",
+      "actual_answer": "To find the total number of apples John has, let's follow the steps:\n\n1. He starts with 8 apples.\n2. He eats 2, so we subtract 2 from 8: 8 - 2 = 6\n3. Then, he buys 5 more apples, so we add 5 to 6: 6 + 5 = 11\n\nJohn now has 11 apples.",
+      "similarity_score": 0.29678985476493835,
+      "execution_time_ms": 112930
+    },
+    {
+      "example_id": "cot_math_001",
+      "question": "Sarah has 15 cookies. She gives half to her friend. How many does she have left?",
+      "expected_answer": "7 or 8",
+      "actual_answer": "To find the number of cookies Sarah has left, we need to calculate half of the original amount and subtract it from the total.\n\nHalf of 15 cookies is 7.5 (since 15 / 2 = 7.5).\n\nSince you can't divide a cookie, this means Sarah actually gave away 7 or 8 cookies (rounding down or up), depending on how she divided them.\n\nRegardless of whether it's 7 or 8 cookies, we know that Sarah has 15 - 7 = 8 cookies left.",
+      "similarity_score": 0.2766319513320923,
+      "execution_time_ms": 112492
+    },
+    {
+      "example_id": "cot_math_002",
+      "question": "A store sells apples for $2 each. If you buy 4 apples, how much do you pay?",
+      "expected_answer": "8",
+      "actual_answer": "To find the total cost of buying 4 apples at $2 each, multiply the number of apples by the price per apple:\n\n4 apples x $2/apple = $8\n\nYou will pay a total of $8 for 4 apples.",
+      "similarity_score": 0.20527514815330505,
+      "execution_time_ms": 63907
+    },
+    {
+      "example_id": "cot_math_003",
+      "question": "Tom has 20 marbles. He loses 3, then wins 7 more. How many does he have?",
+      "expected_answer": "24",
+      "actual_answer": "To find out how many marbles Tom has, we need to calculate the number of marbles he has after losing some and winning others.\n\nInitial marbles = 20\nMarbles lost = 3\nRemaining marbles = 20 - 3 = 17\n\nThen, Tom wins 7 more marbles:\nNew total = Remaining marbles + Marbles won\n= 17 + 7\n= 24\n\nSo, Tom now has 24 marbles.",
+      "similarity_score": 0.3720938563346863,
+      "execution_time_ms": 107820
+    },
+    {
+      "example_id": "cot_math_004",
+      "question": "A train travels 60 miles in 1 hour. How far does it travel in 3 hours?",
+      "expected_answer": "180",
+      "actual_answer": "To find the distance traveled by the train in 3 hours, we can multiply its speed (miles per hour) by the time:\n\nSpeed = Distance / Time\n= 60 miles / 1 hour\n= 60 miles/hour\n\nDistance traveled in 3 hours:\nDistance = Speed x Time\n= 60 miles/hour x 3 hours\n= 180 miles",
+      "similarity_score": 0.038359999656677246,
+      "execution_time_ms": 89022
+    },
+    {
+      "example_id": "cot_logic_000",
+      "question": "If all cats are animals, and Fluffy is a cat, is Fluffy an animal?",
+      "expected_answer": "yes",
+      "actual_answer": "Yes, Fluffy is an animal because it is a specific instance of \"all cats,\" which are classified as animals.",
+      "similarity_score": 0.11055821180343628,
+      "execution_time_ms": 42172
+    },
+    {
+      "example_id": "cot_logic_001",
+      "question": "It's raining and I have an umbrella. Will I get wet if I go outside with my umbrella?",
+      "expected_answer": "no or less likely",
+      "actual_answer": "No, you will not get completely wet if you go outside with your umbrella, assuming it is working properly and the rain is coming from above. The umbrella should create a barrier between you and the rain, keeping you relatively dry. However, there may be small areas under the edges of the umbrella or around the opening where water could still reach you.",
+      "similarity_score": 0.06621652841567993,
+      "execution_time_ms": 74572
+    },
+    {
+      "example_id": "cot_logic_002",
+      "question": "If today is Monday, what day was it 2 days ago?",
+      "expected_answer": "Saturday",
+      "actual_answer": "To find the day 2 days ago, we need to subtract 2 from Monday.\n\nMonday - 1 = Sunday\nSunday - 1 = Saturday\n\nTherefore, 2 days ago was Saturday.",
+      "similarity_score": 0.5031927227973938,
+      "execution_time_ms": 50979
+    }
+  ],
+  "metrics": {
+    "mean_similarity": 0.23363978415727615,
+    "std_similarity": 0.1499095316827028,
+    "median_similarity": 0.24095354974269867,
+    "min_similarity": 0.038359999656677246,
+    "max_similarity": 0.5031927227973938,
+    "total_examples": 8,
+    "successful": 8,
+    "failed": 0
+  }
+}

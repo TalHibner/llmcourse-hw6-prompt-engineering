@@ -1,0 +1,85 @@
+{
+  "experiment_id": "cot_few_shot_20251216_021518",
+  "timestamp": "2025-12-16T02:15:18.308717",
+  "configuration": {
+    "provider": "ollama:llama3.2",
+    "technique": "few_shot",
+    "dataset": "chain_of_thought"
+  },
+  "results": [
+    {
+      "example_id": "cot_math_000",
+      "question": "If John has 8 apples and eats 2, then buys 5 more, how many does he have?",
+      "expected_answer": "11",
+      "actual_answer": "To find out how many apples John has, we need to calculate the total number of apples after each step:\n\n1. John starts with 8 apples.\n2. He eats 2, leaving him with 8 - 2 = 6 apples.\n3. Then, he buys 5 more, bringing the total to 6 + 5 = 11 apples.\n\nSo, John now has 11 apples.",
+      "similarity_score": 0.33235225081443787,
+      "execution_time_ms": 101970
+    },
+    {
+      "example_id": "cot_math_001",
+      "question": "Sarah has 15 cookies. She gives half to her friend. How many does she have left?",
+      "expected_answer": "7 or 8",
+      "actual_answer": "To find out how many cookies Sarah has left, we need to calculate half of 15 (which is 7.5) and then subtract that from the original amount.\n\n15 - 7.5 = 7.5\n\nSince you can't divide a cookie, we'll round down to 7 (since you can't give half a cookie).",
+      "similarity_score": 0.2644827365875244,
+      "execution_time_ms": 82214
+    },
+    {
+      "example_id": "cot_math_002",
+      "question": "A store sells apples for $2 each. If you buy 4 apples, how much do you pay?",
+      "expected_answer": "8",
+      "actual_answer": "You pay $8 (4 x $2).",
+      "similarity_score": 0.3819672167301178,
+      "execution_time_ms": 27284
+    },
+    {
+      "example_id": "cot_math_003",
+      "question": "Tom has 20 marbles. He loses 3, then wins 7 more. How many does he have?",
+      "expected_answer": "24",
+      "actual_answer": "Tom initially had 20 marbles. After losing 3, he had 20 - 3 = 17 marbles left. Then, he won 7 more, so he now has 17 + 7 = 24 marbles.",
+      "similarity_score": 0.35662952065467834,
+      "execution_time_ms": 63521
+    },
+    {
+      "example_id": "cot_math_004",
+      "question": "A train travels 60 miles in 1 hour. How far does it travel in 3 hours?",
+      "expected_answer": "180",
+      "actual_answer": "To find the distance traveled, multiply the speed (distance per hour) by the time:\n\nSpeed = 60 miles/hour\nTime = 3 hours\n\nDistance = Speed x Time\n= 60 miles/hour x 3 hours\n= 180 miles",
+      "similarity_score": 0.18408101797103882,
+      "execution_time_ms": 70425
+    },
+    {
+      "example_id": "cot_logic_000",
+      "question": "If all cats are animals, and Fluffy is a cat, is Fluffy an animal?",
+      "expected_answer": "yes",
+      "actual_answer": "Yes, Fluffy is an animal.",
+      "similarity_score": 0.19255203008651733,
+      "execution_time_ms": 24407
+    },
+    {
+      "example_id": "cot_logic_001",
+      "question": "It's raining and I have an umbrella. Will I get wet if I go outside with my umbrella?",
+      "expected_answer": "no or less likely",
+      "actual_answer": "No, you won't get wet. The umbrella will keep you dry.",
+      "similarity_score": 0.11251305043697357,
+      "execution_time_ms": 33160
+    },
+    {
+      "example_id": "cot_logic_002",
+      "question": "If today is Monday, what day was it 2 days ago?",
+      "expected_answer": "Saturday",
+      "actual_answer": "Sunday.",
+      "similarity_score": 0.771031379699707,
+      "execution_time_ms": 16845
+    }
+  ],
+  "metrics": {
+    "mean_similarity": 0.3244511503726244,
+    "std_similarity": 0.19021533681468497,
+    "median_similarity": 0.29841749370098114,
+    "min_similarity": 0.11251305043697357,
+    "max_similarity": 0.771031379699707,
+    "total_examples": 8,
+    "successful": 8,
+    "failed": 0
+  }
+}
