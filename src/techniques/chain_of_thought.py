@@ -9,12 +9,11 @@ class ChainOfThoughtPrompt(PromptTechnique):
 
     def format_prompt(self, question: str, context: Optional[Dict[str, Any]] = None) -> str:
         """Format with CoT instructions"""
-        return f"""Answer this question by thinking step by step.
+        return f"""Answer this question by thinking step by step, but be concise.
 
 Question: {question}
 
-Let's approach this step by step:
-1."""
+Provide brief reasoning (2-3 steps) followed by your final answer."""
 
     def get_name(self) -> str:
         return "chain_of_thought"

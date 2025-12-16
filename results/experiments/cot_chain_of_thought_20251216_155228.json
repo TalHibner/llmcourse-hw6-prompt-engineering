@@ -1,0 +1,85 @@
+{
+  "experiment_id": "cot_chain_of_thought_20251216_155228",
+  "timestamp": "2025-12-16T15:52:28.174613",
+  "configuration": {
+    "provider": "ollama:llama3.2",
+    "technique": "chain_of_thought",
+    "dataset": "chain_of_thought"
+  },
+  "results": [
+    {
+      "example_id": "cot_math_000",
+      "question": "If John has 8 apples and eats 2, then buys 5 more, how many does he have?",
+      "expected_answer": "11",
+      "actual_answer": "Here's the step-by-step solution:\n\n1. Start with the initial number of apples John had: 8\n2. Subtract the 2 apples he ate: 8 - 2 = 6\n3. Add the 5 new apples he bought: 6 + 5 = 11\n\nFinal answer: John has 11 apples.",
+      "similarity_score": 0.3194757401943207,
+      "execution_time_ms": 94583
+    },
+    {
+      "example_id": "cot_math_001",
+      "question": "Sarah has 15 cookies. She gives half to her friend. How many does she have left?",
+      "expected_answer": "7 or 8",
+      "actual_answer": "Here's the solution:\n\n1. First, we need to find out how many cookies Sarah gave to her friend.\nSince she gives half of 15 cookies, we can calculate it as: 15 / 2 = 7.5\nHowever, since you can't give a fraction of a cookie, we'll consider that she gave away approximately 7-8 cookies (as you can't divide a whole cookie).\n\nLet's assume she gave away 7 cookies for simplicity.\n\n2. Now, let's subtract the number of cookies she gave to her friend from the original amount: \n15 - 7 = 8\n\n3. This means Sarah has 8 cookies left.\n\nFinal answer: Sarah has 8 cookies left.",
+      "similarity_score": 0.3031795620918274,
+      "execution_time_ms": 154415
+    },
+    {
+      "example_id": "cot_math_002",
+      "question": "A store sells apples for $2 each. If you buy 4 apples, how much do you pay?",
+      "expected_answer": "8",
+      "actual_answer": "Here's the solution:\n\n1. Determine the price of one apple ($2).\n2. Multiply the price of one apple by the number of apples purchased (4). This is a simple multiplication operation.\n3. The result of the multiplication will give us the total amount paid for 4 apples.\n\nFinal answer: $8",
+      "similarity_score": 0.24516449868679047,
+      "execution_time_ms": 91203
+    },
+    {
+      "example_id": "cot_math_003",
+      "question": "Tom has 20 marbles. He loses 3, then wins 7 more. How many does he have?",
+      "expected_answer": "24",
+      "actual_answer": "Here's the solution:\n\n1. Tom starts with 20 marbles.\n2. He loses 3, so we subtract 3 from 20: 20 - 3 = 17.\n3. Then, he wins 7 more, so we add 7 to 17: 17 + 7 = 24.\n\nFinal answer: Tom has 24 marbles.",
+      "similarity_score": 0.41427677869796753,
+      "execution_time_ms": 101567
+    },
+    {
+      "example_id": "cot_math_004",
+      "question": "A train travels 60 miles in 1 hour. How far does it travel in 3 hours?",
+      "expected_answer": "180",
+      "actual_answer": "Here's the solution:\n\nStep 1: The train travels 60 miles in 1 hour, so we can determine its speed as 60 miles/hour.\n\nStep 2: Since we want to find out how far it travels in 3 hours, we multiply the distance it traveled in 1 hour by 3. \n\nDistance = Speed x Time\n= 60 miles/hour x 3 hours\n= 180 miles\n\nAnswer: The train travels 180 miles in 3 hours.",
+      "similarity_score": 0.1313137710094452,
+      "execution_time_ms": 120483
+    },
+    {
+      "example_id": "cot_logic_000",
+      "question": "If all cats are animals, and Fluffy is a cat, is Fluffy an animal?",
+      "expected_answer": "yes",
+      "actual_answer": "Here's the step-by-step reasoning:\n\n1. We know that \"all cats\" implies that every single cat belongs to the category of \"animals\".\n2. Since Fluffy is specifically identified as a \"cat\", it falls under the category of all cats.\n3. Therefore, by transitive inference, if all cats are animals, and Fluffy is a cat, then Fluffy must also be an animal.\n\nFinal answer: Yes",
+      "similarity_score": 0.0739455372095108,
+      "execution_time_ms": 104679
+    },
+    {
+      "example_id": "cot_logic_001",
+      "question": "It's raining and I have an umbrella. Will I get wet if I go outside with my umbrella?",
+      "expected_answer": "no or less likely",
+      "actual_answer": "Here are the steps:\n\n1. The condition is \"it's raining\", which implies water is falling from the sky.\n2. Holding an umbrella will create a barrier between you and the rain, preventing direct contact with the water droplets.\n3. Assuming proper use of the umbrella (open and pointed downwards), it should effectively shield you from getting wet.\n\nFinal answer: No, assuming proper use of the umbrella, you will not get wet while going outside on a rainy day.",
+      "similarity_score": 0.02341122180223465,
+      "execution_time_ms": 113997
+    },
+    {
+      "example_id": "cot_logic_002",
+      "question": "If today is Monday, what day was it 2 days ago?",
+      "expected_answer": "Saturday",
+      "actual_answer": "Here's the solution:\n\n1. To find out the day 2 days ago, we need to subtract 2 from the current day.\n2. Since today is Monday, subtracting 2 would take us back to Friday (because Sunday - Saturday - Friday = 3 days before Monday).\n3. Therefore, 2 days ago was a Friday.\n\nFinal answer: It was a Friday.",
+      "similarity_score": 0.4590311646461487,
+      "execution_time_ms": 103623
+    }
+  ],
+  "metrics": {
+    "mean_similarity": 0.24622478429228067,
+    "std_similarity": 0.14776216759626234,
+    "median_similarity": 0.27417203038930893,
+    "min_similarity": 0.02341122180223465,
+    "max_similarity": 0.4590311646461487,
+    "total_examples": 8,
+    "successful": 8,
+    "failed": 0
+  }
+}

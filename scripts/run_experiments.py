@@ -51,7 +51,7 @@ def main():
 
     # Initialize provider (Ollama - PRIMARY)
     logger.info("Initializing Ollama provider...")
-    provider = OllamaProvider(model="llama3.2")
+    provider = OllamaProvider(model="llama3.2", timeout=600)
 
     if not provider.is_available():
         logger.error("Ollama is not available! Please ensure Ollama is running.")
